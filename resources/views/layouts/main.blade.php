@@ -55,6 +55,7 @@
                         <div class="site-logo">
                             <a href="{{url('/')}}">
                                 <img src="img/logo.png" alt="">
+                                {{-- <h4 class="text-white">Hamro Bagaincha</h4> --}}
                             </a>
                         </div>
                         <!-- logo -->

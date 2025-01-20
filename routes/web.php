@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminproducController;
+use App\Http\Controllers\Admin\CheckoutController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProfileController;
@@ -30,6 +31,7 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index']);
 
     Route::resource('product', AdminproducController::class);
+    Route::resource('checkout',CheckoutController::class);
 });
 
 require __DIR__ . '/auth.php';
